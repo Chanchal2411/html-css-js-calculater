@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: Gotham Rounded, sans-serif;
@@ -7,16 +9,16 @@
   body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, #00AAFF, #00FF6C);
+    background: linear-gradient(to right, #88c4e2, #5aec97);
   }
   
   .calculator-grid {
     display: grid;
     justify-content: center;
     align-content: center;
-    min-height: 100vh;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    min-height: 50vh;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: minmax(90px, auto) repeat(5, 90px);
   }
   
   .calculator-grid > button {
@@ -56,3 +58,34 @@
     color: white;
     font-size: 2.5rem;
   }
+
+  /* FOOTER SECTION */
+
+  footer {
+    height: min-content;
+    margin: 0 1rem;
+  }
+  
+  footer p {
+    text-align: center;
+    color: white;
+  }
+
+  nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
